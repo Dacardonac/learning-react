@@ -1,25 +1,33 @@
-import './App.css'
-import { TwitterFollowCard } from './TwitterFollowCard'
+import React from 'react'
+import '../src/assets/styles/App.css'
+import { TwitterFollowCard } from './assets/components/TwitterFollowCard'
+import { TwitterNavbar } from './assets/components/TwitterNavbar'
 
 export function App() {
 
   return (
+    <>
+    <header className='Header'>
+      <TwitterNavbar />
+      <h2 className='header-subtitle'>Follow me on Twitter</h2>
+    </header>
     <section className='App'>
-    <TwitterFollowCard isFollowing userName='dacardonac'>
+    <TwitterFollowCard userName='dacardonac'>
       Daniel Alejandro Cano
     </TwitterFollowCard>
 
-    <TwitterFollowCard isFollowing={false} userName='midudev'>
+    <TwitterFollowCard userName='midudev'>
       Miguel Ángel Durán
     </TwitterFollowCard>
 
-    <TwitterFollowCard isFollowing userName='elonmusk'>
+    <TwitterFollowCard userName='elonmusk'>
       Elon Musk
     </TwitterFollowCard>
 
-    <TwitterFollowCard isFollowing userName='Google'>
+    <TwitterFollowCard userName='Google'>
       Google
     </TwitterFollowCard>
     </section>
+    </>
   )
 }
