@@ -1,12 +1,27 @@
 {
   "name": "learning-react",
   "version": "1.0.0",
+  "description": "Learning React with Midudev",
+  "private": false,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "workspaces": [
+    "projects/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dacardonac/learning-react"
+  },
+  "keywords": ["React", "JavaScript", "TypeScript"],
+  "author": "Dacardonac",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/Dacardonac/learning-react/issues"
+  },
+  "homepage": "https://github.com/Dacardonac/learning-react#readme",
+  "devDependencies": {
+    "standard": "17.0.0"
+  }
 }
