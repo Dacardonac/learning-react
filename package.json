@@ -14,7 +14,11 @@
     "type": "git",
     "url": "git+https://github.com/Dacardonac/learning-react"
   },
-  "keywords": ["React", "JavaScript", "TypeScript"],
+  "keywords": [
+    "React",
+    "JavaScript",
+    "TypeScript"
+  ],
   "author": "Dacardonac",
   "license": "ISC",
   "bugs": {
@@ -22,6 +26,9 @@
   },
   "homepage": "https://github.com/Dacardonac/learning-react#readme",
   "devDependencies": {
-    "standard": "17.0.0"
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
   }
 }
